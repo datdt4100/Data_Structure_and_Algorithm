@@ -1,0 +1,183 @@
+#include <sstream>
+#include <string>
+#include <iostream>
+#include <type_traits>
+#include <math.h>
+#include <bits/stdc++.h>
+using namespace std;
+
+class Point
+{
+private:
+    double x, y;
+
+public:
+    Point()
+    {
+         x=0;
+         y=0;
+    }
+
+    Point(double a, double b)
+    {
+         x=a;
+         y=b;
+    }
+
+    void setX(double a)
+    {
+         x=a;
+    }
+
+    void setY(double b)
+    {
+         y=b;
+    }
+
+    double getX() const
+    {
+         return x;
+    }
+
+    double getY() const
+    {
+         return y;
+    }
+
+    double distanceToPoint(const Point& pointA)
+    {
+         double d;
+         d= sqrt(pow(pointA.getX()-this->getX(),2)+pow(pointA.getY()-this->getY(),2));
+         return d;
+    }
+    
+    friend istream &operator >> (istream &in, Point &K)
+	{
+		in >> K.x;
+		in >> K.y;
+		return in;		
+	}
+};
+
+class Circle
+{
+private:
+    Point center;
+    double radius;
+
+public:
+    Circle()
+    {
+        /*  
+         * STUDENT ANSWER   
+         * TODO: set zero center's x-y and radius
+         */
+         radius = 0;
+    }
+
+    Circle(Point I, double R)
+    {
+        /*  
+         * STUDENT ANSWER
+         */
+         center.setX(I.getX());
+		 center.setY(I.getY());
+         radius = R;
+    }
+
+    Circle(const Circle &C)
+    {
+         center = C.getCenter();
+         radius = C.getRadius();
+    }
+    
+    void setCenter(Point point)
+    {
+         center.setX(point.getX());
+         center.setY(point.getY());
+         
+    }
+
+    void setRadius(double R)
+    {
+         radius=R;
+    }
+
+    Point getCenter() const
+    {
+         return center;
+    }
+
+    double getRadius() const
+    {
+         return radius;
+    }
+    
+
+	bool containsPoint(const Point point)
+    {
+        /*  
+         * STUDENT ANSWER 
+         * TODO: check if a given point is entirely within the circle (does not count if the point lies on the circle).  
+                 If contain, return true.
+         */
+         if (center.distanceToPoint(point)<radius) return 1;
+         return 0;
+    }
+
+    bool containsTriangle(Point pointA, Point pointB, Point pointC)
+    {
+        /*  
+         * STUDENT ANSWER   
+         * TODO: check if a given triangle ABC (A, B, C are not on the same line) is entirely within the circle (does not count if any point of the triangle lies on the circle).  
+                 If contain, return true.
+         */
+         if (center.distanceToPoint(pointA)>= radius 
+		 	|| center.distanceToPoint(pointB)>= radius 
+		 	|| center.distanceToPoint(pointC)>= radius) return 0;
+		 	
+		 double AB,BC,CA;
+		 AB= pointA.distanceToPoint(pointB);
+		 BC= pointB.distanceToPoint(pointC);
+		 CA= pointC.distanceToPoint(pointA);
+         if ( AB+BC == CA || AB+CA==BC || BC+CA==AB) return 0;
+         return 1;
+    }
+    
+	void operator=(const Circle &c2)
+    {
+     	this->setCenter(c2.getCenter());
+     	this->setRadius(c2.radius);
+    }
+
+    bool operator==(const Circle &c2)
+    {
+		if (this->getRadius() != c2.getRadius()) return 0;
+		if (this->center.getX() != c2.center.getX() && this->center.getY() != c2.center.getY()) return 0;
+		return 1;
+    }
+
+    friend istream& operator >> (istream &in, Circle &c3)
+    {
+		in >> c3.center;
+		in >> c3.radius;
+		return in;
+    }
+
+    void printCircle()
+    {
+        printf("Center: {%.2f, %.2f} and Radius %.2f\n", this->center.getX(), this->center.getY(), this->radius);
+    }
+};
+
+int main(){
+Point pointO(0, 0);
+Circle A = Circle(pointO, 3);
+Circle B;
+B = A;
+cout << (B == A);
+
+Circle C;
+cin >> C;
+C.printCircle();
+}

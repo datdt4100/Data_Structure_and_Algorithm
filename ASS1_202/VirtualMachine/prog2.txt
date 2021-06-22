@@ -1,0 +1,10 @@
+Move R1, 0A
+Input R2
+Store R1, R2
+Load R3, R1
+Load R4, R1
+Add R4, R3
+Mul R3, 5.34567
+Div R4, R3
+Output R4
+Halt

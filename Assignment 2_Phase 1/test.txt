@@ -1,0 +1,94 @@
+Add AVL Tree: 0075FAD0
+Add Splay Tree: 0075FD00
+Add Entry: 0075F7F8
+Add AVL Node: 00755940
+Add Entry: 0075FA28
+Add Splay Node: 00754C68
+Add Entry: 0075FB40
+Add AVL Node: 0075E610
+Add Entry: 0075FC90
+Add Splay Node: 0075E650
+Add Entry: 0075FB78
+Add AVL Node: 0075E1C8
+Add Entry: 0075FCC8
+Add Splay Node: 0075E208
+Add Entry: 0075F6E0
+Add AVL Node: 00763430
+Add Entry: 0075FBB0
+Add Splay Node: 007632F0
+Add Entry: 0075F830
+Add AVL Node: 00763330
+Add Entry: 0075F718
+Add Splay Node: 00762CF0
+Add Entry: 0075F750
+Add AVL Node: 00762D30
+Add Entry: 0075FD38
+Add Splay Node: 00762F30
+Add Entry: 0075F980
+Add AVL Node: 00762EB0
+Add Entry: 0075F868
+Add Splay Node: 00763070
+Add Entry: 0075F8A0
+Add AVL Node: 00763270
+Add Entry: 0075F9B8
+Add Splay Node: 00762E70
+Add Entry: 0075F9F0
+Add AVL Node: 00762F70
+Add Entry: 0075F0D8
+Add Splay Node: 00763230
+Add Entry: 00763618
+Add AVL Node: 00762EF0
+Add Entry: 00763650
+Add Splay Node: 007633F0
+Add Entry: 00763880
+Add AVL Node: 00762DB0
+Add Entry: 00763928
+Add Splay Node: 00762FB0
+
+
+Delete Entry: 0075F9F0
+Delete AVL Node: 00762F70
+Delete Entry: 0075FD38
+Delete Splay Node: 00762F30
+Delete Entry: 0075F980
+Delete AVL Node: 00762EB0
+Delete Entry: 00763618
+Delete AVL Node: 00762EF0
+Delete Entry: 0075F830
+Delete AVL Node: 00763330
+Delete Entry: 0075F8A0
+Delete AVL Node: 00763270
+Delete Entry: 0075FB78
+Delete AVL Node: 0075E1C8
+Delete Entry: 00763880
+Delete AVL Node: 00762DB0
+Delete Entry: 0075F750
+Delete AVL Node: 00762D30
+Delete Entry: 0075F7F8
+Delete AVL Node: 00755940
+Delete Entry: 0075FB40
+Delete AVL Node: 0075E610
+Delete Entry: 0075F6E0
+Delete AVL Node: 00763430
+Delete AVL Tree: 0075FAD0
+Delete Entry: 0075F868
+Delete Splay Node: 00763070
+Delete Entry: 0075FCC8
+Delete Splay Node: 0075E208
+Delete Entry: 00763650
+Delete Splay Node: 007633F0
+Delete Entry: 0075F9B8
+Delete Splay Node: 00762E70
+Delete Entry: 0075FA28
+Delete Splay Node: 00754C68
+Delete Entry: 0075FC90
+Delete Splay Node: 0075E650
+Delete Entry: 00763928
+Delete Splay Node: 00762FB0
+Delete Entry: 0075F0D8
+Delete Splay Node: 00763230
+Delete Entry: 0075FBB0
+Delete Splay Node: 007632F0
+Delete Entry: 0075F718
+Delete Splay Node: 00762CF0
+Delete Splay Tree: 0075FD00

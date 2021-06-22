@@ -1,0 +1,7 @@
+﻿  Tree.cpp
+E:\Data Structure and Algothrium\BinarySearchTree\AVL.h(142,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\Data Structure and Algothrium\BinarySearchTree\AVL.h(129): message : while compiling class template member function 'void AVLTree<int>::printTreeStructure(void)'
+E:\Data Structure and Algothrium\BinarySearchTree\Tree.cpp(37): message : see reference to function template instantiation 'void AVLTree<int>::printTreeStructure(void)' being compiled
+E:\Data Structure and Algothrium\BinarySearchTree\Tree.cpp(31): message : see reference to class template instantiation 'AVLTree<int>' being compiled
+  LINK : program database E:\Data Structure and Algothrium\BinarySearchTree\Debug\BinarySearchTree.pdb missing; performing full link
+  BinarySearchTree.vcxproj -> E:\Data Structure and Algothrium\BinarySearchTree\Debug\BinarySearchTree.exe
